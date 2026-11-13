@@ -1,0 +1,21 @@
+{
+  "name": "@local/quick-memo",
+  "version": "0.0.1",
+  "private": true,
+  "description": "quick_memo：把口语文字整理成结构化速记 JSON，并写入工作区 memos/ 目录。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-llm": "*",
+    "@deepseek-ai/dsh-tools": "*"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
+
